@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>BHANUJA--Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+            font-family: 'Dosis', sans-serif;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 55px;
+            background-color: #00264d;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 34px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.3rem;
+            color: #00bfff;
+        }
+
+        .left {
+            font-size: 25px;
+        }
+
+        .first {
+            display: flex;
+            justify-section: space-around;
+            margin: 80px 0;
+        }
+
+        .first>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            background-color: none;
+            font-size: 3rem;
+            margin: 100px;
+            color: black;
+            width: 80%;
+        }
+
+        .leftsection .btn {
+            text-decoration: none;
+            padding: 12px;
+            background-color: #00264d;
+            border: 2px solid black;
+            border-radius: 60px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .leftsection .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .rightsection img {
+            background-color: none;
+            width: 170%;
+            margin: auto;
+            content-align: right;
+        }
+
+        .blue {
+            color: #00264d;
+        }
+
+        #element {
+            font-size: 25px;
+            color: #00bfff;
+        }
+
+        .card-container {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+      }
+
+      .card {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          flex: 1;
+          margin: 0 10px;
+          padding: 10px;
+          max-width: 18%;
+      }
+
+      .card-title {
+          font-size: 1.25rem;
+          color: #000;
+      }
+
+      .card-text {
+          font-size: 1rem;
+          color: #333;
+      }
+      .project{
+        background-color: #00264d;
+        text-align: center;
+      }
+      .info-section {
+          padding: 20px;
+          background-color: #00bfff;
+          text-align: center;
+      }
+      .info-section a{
+        text-decoration: none;
+        color: white;
+        
+      }
+
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <div class="left">Bhanuja's Portfolio </div>
+        <div class="right">
+            <ul>
+                <li><a href="C:\Users\Bhanuja\Desktop\CODSOFT PP\bhanuja.html">Home</a></li>
+                <li><a href="C:\Users\Bhanuja\Desktop\CODSOFT PP\about.html">About</a></li>
+                <li><a href="C:\Users\Bhanuja\Desktop\CODSOFT PP\Contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="first">
+            <div class="leftsection">
+                Hello! My name is <span class="blue">Bhanuja</span>
+                <div>
+                    and I am a Developer.
+                </div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn"><a href="C:\Users\Bhanuja\Desktop\BHANUJA\BHANUJA NOTES\BCE\RESUME.pdf">Resume</a></button>
+                    <button class="btn"><a href="https://github.com/dashboard">Github</a></button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="C:\Users\Bhanuja\Desktop\CODSOFT PP\pic.png">
+
+            </div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Undergraduate Engineering Student.', 'B.E in Artificial Intelligence and Data Science.', 'Terna Engineering College.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+   <section class="project">
+     <h1>MY PROJECTS</h1>
+   </section>
+
+    <section class="card-container">
+       <div class="card">
+           <div class="card-body">
+               <h5 class="card-title">Library Management System</h5>
+               <p class="card-text">A modern LMS with user interface to check the individual user's account on login with password to keep track of the past book issues.</p>
+           </div>
+       </div>
+       <div class="card">
+           <div class="card-body">
+               <h5 class="card-title">Data Visualisation</h5>
+               <p class="card-text">User input data visualised into pie charts, histograms and line graphs using python.</p>
+           </div>
+       </div>
+       <div class="card">
+           <div class="card-body">
+               <h5 class="card-title">EDA</h5>
+               <p class="card-text">Exploratory Data Analysis of different datasets using data science and python.</p>
+           </div>
+       </div>
+       <div class="card">
+           <div class="card-body">
+               <h5 class="card-title">Landing Page</h5>
+               <p class="card-text">A landing page based on HTML, CSS, and JavaScript.</p>
+           </div>
+       </div>
+       <div class="card">
+           <div class="card-body">
+               <h5 class="card-title">Face Detection</h5>
+               <p class="card-text">Face Detection for live feed based attendance system using CNN model.</p>
+           </div>
+       </div>
+   </section>
+   <footer>
+      <div class="info-section">
+             <h2>For More Information</h2>
+             <a href="bhanuja1602@gmail.com">Email: bhanuja1602@gmail.com</a>
+         </div>
+     </div>
+ </div></footer>
+
+</body>
+
+</html>
